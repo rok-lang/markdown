@@ -1,0 +1,9 @@
+// description: "CommonMark + GFM (tables, callouts, footnotes, heading anchors) to HTML"
+// license: "MIT OR Apache-2.0"
+// repository: "https://github.com/rok-lang/rok-markdown"
+// (the manifest has no fields for these yet)
+Package {
+    name: "rok-markdown",
+    version: "0.1.0",
+    deps: {},
+}
