@@ -1,8 +1,8 @@
 Package {
-    name: "rok-markdown",
+    name: "markdown",
     version: "0.1.0",
     description: "CommonMark + GFM (tables, callouts, footnotes, heading anchors) to HTML",
     license: "MIT OR Apache-2.0",
-    repository: "https://github.com/rok-lang/rok-markdown",
+    repository: "https://github.com/rok-lang/markdown",
     deps: {},
 }
