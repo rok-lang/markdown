@@ -1,6 +1,6 @@
 # markdown
 
-A rok library that converts Markdown to HTML. It covers the main parts of CommonMark plus GitHub extensions, and renders the documentation pages of [rok-lang.org](https://rok-lang.org) and the READMEs on [rokstones.io](https://rokstones.io).
+A rok library that converts Markdown to HTML. It covers the main parts of CommonMark plus GitHub extensions, and renders the pages of [docs.rok-lang.org](https://docs.rok-lang.org) and the READMEs on [rokstones.io](https://rokstones.io).
 
 - Blocks: ATX headings (GitHub-compatible `id` and `#` anchor), paragraphs, fenced code (```` ``` ```` / `~~~`), block quotes, nested lists (tight / loose, start number), thematic breaks, `<div>` / `<section>` HTML blocks
 - GFM: tables (alignment, `\|`), strikethrough (`~~`), callouts (`> [!NOTE]` ..), footnotes (`[^1]` and `[^1]: ..`)
