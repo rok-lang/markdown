@@ -53,6 +53,7 @@ Inline HTML is escaped as text in both modes. Callout titles and all attribute v
 
 ```bash
 rok test        # tests
+rok bench       # benchmarks
 rok fmt --check
 rok doc         # API docs in target/doc/
 ```
