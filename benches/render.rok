@@ -1,0 +1,24 @@
+// Render a large Markdown document to HTML (spec 9.9.11).
+
+use rok::core::bench::Bench;
+use rok::core::hint::black_box;
+use pkg::render;
+
+// ~1000 sections of mixed block and inline constructs.
+fn bench_doc() -> str {
+    let b = StrBuf::new();
+    let i = 0i64;
+    while i < 1000i64 {
+        b.push_str(f"## Section {i}\n\nSome *emphasised* and **strong** text with `code` and a [link](http://e.org/{i}).\n\n");
+        b.push_str("- item one\n- item two\n  - nested\n\n> [!NOTE]\n> a callout\n\n```rok\nfn f() -> i32 { 1 }\n```\n\n");
+        i += 1i64;
+    }
+    b.to_str()
+}
+
+#[bench]
+fn render_doc(b: Bench) {
+    let s = bench_doc();
+    b.bytes(s.len() as i64);
+    b.iter(|| render(black_box(s)));
+}
