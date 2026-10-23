@@ -910,7 +910,7 @@ fn renders_inlines() {
 
 #[test]
 fn github_slugs() {
-    expect(slug("3.14.10. ? 연산자 — none 조기 반환") == "31410--연산자--none-조기-반환", "case 9");
+    expect(slug("3.14.10. ? 연산자 \u{2014} none 조기 반환") == "31410--연산자--none-조기-반환", "case 9");
     expect(slug("점 / 물음표") == "점--물음표", "case 10");
 }
 
