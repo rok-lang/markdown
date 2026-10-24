@@ -58,14 +58,6 @@ rok fmt --check
 rok doc         # API docs in target/doc/
 ```
 
-## Publishing
-
-Not yet published to rokstones.io. For now rok-lang.org and rokstones.io use it as a path dependency (`"markdown": Dep::path("../stones/markdown")`). To publish:
-
-1. Push this repository to `https://github.com/rok-lang/markdown`.
-2. Preview the index line with `rok publish`, commit it with `rok publish --index <checkout> --commit` in a [rokstones.io-index](https://github.com/rok-lang/rokstones.io-index) checkout, and send a pull request.
-3. Once merged, change both sites' dependency to `"markdown": "0.1"`.
-
 ## License
 
 Licensed under either of [MIT](LICENSE-MIT) or [Apache-2.0](LICENSE-APACHE), at your option.
