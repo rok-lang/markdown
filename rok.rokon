@@ -5,5 +5,7 @@ Package {
     description: "CommonMark + GFM (tables, callouts, footnotes, heading anchors) to HTML",
     license: "MIT OR Apache-2.0",
     repository: "https://github.com/rok-lang/markdown",
+    keywords: ["markdown", "commonmark", "gfm", "html"],
+    categories: ["text-processing", "parser-implementations"],
     deps: {},
 }
