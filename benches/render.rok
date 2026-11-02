@@ -1,4 +1,4 @@
-// Render a large Markdown document to HTML (spec 9.9.11).
+// Render a large Markdown document to HTML.
 
 use rok::core::bench::Bench;
 use rok::core::hint::black_box;
@@ -19,6 +19,6 @@ fn bench_doc() -> str {
 #[bench]
 fn render_doc(b: Bench) {
     let s = bench_doc();
-    b.bytes(s.len() as i64);
+    b.set_bytes(s.len() as i64);
     b.iter(|| render(black_box(s)));
 }
